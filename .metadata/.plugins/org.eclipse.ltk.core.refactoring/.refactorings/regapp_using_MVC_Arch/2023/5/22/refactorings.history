@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LoginController.java&apos; to &apos;regapp03/src/main/java/com.regapp03.controller&apos;&#x0D;&#x0A;- Original project: &apos;regapp_using_MVC_Arch&apos;&#x0D;&#x0A;- Destination element: &apos;regapp03/src/main/java/com.regapp03.controller&apos;&#x0D;&#x0A;- Original element: &apos;com.regapp.controller.LoginController.java&apos;" description="Copy compilation unit" destination="=regapp03/src\/main\/java&lt;com.regapp03.controller" element1="/src\/main\/java&lt;com.regapp.controller{LoginController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1685353606857" units="1" version="1.0"/>
+</session>

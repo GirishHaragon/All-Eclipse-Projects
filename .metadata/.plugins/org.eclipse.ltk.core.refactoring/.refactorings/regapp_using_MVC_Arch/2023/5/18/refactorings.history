@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.regapp.controller&apos; to &apos;regapp11/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;regapp&apos;&#x0D;&#x0A;- Destination element: &apos;regapp11/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;regapp/src/main/java/com.regapp.controller&apos;" description="Copy package" destination="=regapp11/src\/main\/java" element1="/src\/main\/java&lt;com.regapp.controller" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1683057835257" version="1.0"/>
+</session>

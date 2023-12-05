@@ -1,0 +1,27 @@
+package JDBC_example;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class F_Retrieving_record {
+	public static void main(String[] args) {
+		try {
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_1","root","test");//At times some developers do not give Port numbers, but that's not a good practice.
+			Statement stmnt = con.createStatement();
+			ResultSet results = stmnt.executeQuery("SELECT * FROM employee");//We use executeUpdate only for 3 major operations (Inserting, Updaing & Deleting). But to read the record we don't need any UPDATEs, therefore we use executeQuery().
+			while(results.next()) { //We should remember here, that String Tokenizer, in that we had used someting like hasMoreTokens(). Now here next() will do the same.
+				//System.out.println("Hello!!");//This is printing Hello how many records we have in DB that many times.
+				System.out.println(results.getString(1));//Meaning we r tlling, read the first column records. Where the number 1 is the index number of Table head
+				System.out.println(results.getString(2));
+				System.out.println(results.getString(3));//here we r using getString because everything out there is a column with a Data-type Varchar. If the Data-type was different, then we would write get___ followed by the Data-type, it could be Int, Boolean, etc..  
+				System.out.println(results.getString(4));
+			}
+			con.close();//Not mandatory to close connection, but a good practice.
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}

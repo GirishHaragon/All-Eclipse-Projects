@@ -1,0 +1,157 @@
+1. What's a Data Structure?
+	A named location that can be used to store and organize data
+  	example: 1.Family tree (Tree is a Data Structure)
+  	  		 	-> A hierarchy of family relationships.
+  	  	   	 2.Array (Array is also a collection) 
+  	  	   		A collection of elements stored at contiguous memory locations.
+  	  	   		-> char[] array;  array={'H','e','l','l','o'};
+  	  	  
+2. What's an Algorithm?
+	Algorithm is a Collection of steps to solve a problem.
+	example: 1.We are hungry so we need Baking a Pizza:
+			   -> Solution is: 1.Heat the oven to 550`F
+			   				   2.Knead the dough
+			   				   3.Add topings
+			   				   ...etc
+			 2.Linear search: One by one, examine the elements to find a value.
+			   -> String[] str = {"student1", "student2", "student3", "student4", "student5"};
+			   -> Linear search is an example for searching algorithm.
+			   
+3. Why DataStructures and Algorithm to learn?
+	-> You'll write code that is both time and memory efficient.
+	-> Commonly asked questions involve DS&A in coding job interviews.
+	
+	
+Let's start from Stack Data Structure.
+
+*****Stack:-> Stack is a LIFO Data Structure (Last in First out).
+	  	   -> It stores objects into a sort of "Vertical Tower".
+	  	   -> push() to add objects to the top.
+	  	   -> pop() to remove objects from the top.
+	
+		   -> After declaring our stack we can add objects using push() method
+		   		Stack<String> stack = new Stack<>();
+		   		stack.push("MineCraft");
+		   -> As it follows LIFO, to access bottom most object we first need to pop or remove
+		   	  all objects on the top of it.
+		   -> Stack starts inserting objects from 1 not from 0.
+		   -> stack.pop(); //We don't need to list the item to be popped bcz it always remove the top one.
+		   -> String myFavGame = stack.pop(); //We can use the popped object by assigning it to local variable.
+		   			System.out.println(myFavGame);
+		   -> If we don't to want remove top object but see what's on top of stack, then we use peek() method.
+	       		System.out.println(stack.peek());
+	       -> System.out.println(stack.search("doOm")); //If the Object is not found then it return -ve 1.
+	       -> Stack can actually run out of memory if stored about it's capacity.
+//				for (int i = 0; i < 1000000000; i++) {
+//					stack.push("Fallout76");
+//				}
+//				We need to wait for 2 minutes for getting the exception in console.
+//				Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+
+	Uses of Stack:
+		1. Undo/Redo features in text editors. 
+		2. Moving Back or Forward in Browser pages. 
+		3. BackTracking algorithms (navingate maze, fileDirectories).
+		4. Calling functions (Call stack). //We will talk about it later.
+		
+		
+*****Queue:-> Queue are FIFO Data Structure (First in First out).
+	LinkedList:
+		   -> A Collection designed for holding elements prior to processing Linear Data Structure.
+		   -> Example: Line of People: Fist come first serve basis.
+		   -> It contains methods as
+		   			To add    -  enqueue(), offer()
+		   			To remove -  dequeue(), poll()
+		   -> Enqueueing(Adding object at the end/tail element) 
+		   -> Dequeueing(Removing the object at the head)
+		   -> When we use methods like: offer(), peek() & poll() doesn't throw exception.
+		   -> Instead of using the offer(), poll() & peek() methods if we use their alternatives
+			  add(), remove(), element() then we can see exceptions.
+		   -> It is recommended to use offer(), poll(), peek() which returns a value without exception.
+		   
+		   -> We cannot use Queue directly bcz it is an Interface.
+		   -> We can peek the queue to see the Head element.
+		   -> Queue interface extends Collection interface. So we can use any methods from Collection as well,
+		   	  like isEmpty(), contains() size() etc..
+		   	  
+		   -> LinkedList is better alternative to ArrayList bcz Array/ArrayList is poor in performing
+		   	  insertion, deletion due to shifting/shuffling of elements.
+		   -> But LinkedList has Nodes with pointers which contains both object & next/prev node memory addr.
+		   -> There are 2 types in LinkedList: Singly & Doubly LinkedList.
+		   -> By default LinkedList follows Doubly LinkedList which consume more memory and contain prev & 
+		   	  next node memory address. 
+		   -> These nodes are Non-contiguous, meaning the nodes are not in line, can be anywhere in memory.
+		   -> Each node knows where next node resides.
+		   -> This structure helps in better performing of insertion/deletion as only minimal modification is 
+		   	  needed in the node's addresses.
+		   -> The first/head node consists null as prev node address & 
+		   	  last/tail node consists null as next node address.
+		   -> LinkedList are bad at searching cases.
+		   
+		   
+		   -> LinkedList stores data as nodes in 2 parts (data + address)
+		   -> Nodes are in non-consecutive memory locations.
+		   -> Elements are linked using pointers.
+		   -> We can traverse both Head to tail and tail to head in Doubly LinkedList.
+		  			
+		   -> Singly LinkedList:
+		  		 Node                     Node                    Node
+		  	[data | address]  --->  [data | address]  --->  [data | address]
+		  	
+		   -> Doubly LinkedList:
+		  		       Node                              Node                               Node
+		  	[address | data | address]  <--->  [address | data | address]  <--->  [address | data | address]		      
+		  
+		  
+    Advantages:
+    	1. Dynamic Data Structure (allocates needed memory while running)
+    	2. Insertion and deletion of Nodes is easy. 0(1) [Big O-Notation for Time Notation]
+    	3. No/Low memory waste.
+    	
+    DisAdvantages:
+    	1. Greater memory usage (additional pointer)
+    	2. No random access of elements (no index [i])
+    	3. Accessing/searching elements is more time consuming. 0(n) [Linear time]
+    	
+    Uses of LinkedList:
+    	1. Implement Stacks/Queues
+    	2. GPS Navigation - each steps for destination is considered as a node & if we take a detour
+    	   then we can insert/delete a node & the distance can be calculated again.
+    	3. Music Playlist - each song within a playlist mightn't necessarily be next to each other in the 
+    	   folder, we can arrange the songs as a playlist wherever they are (to follow a certain order).
+		   
+	Uses of Queue:
+		1. Keyboard Buffer. (Letter should appear on screen in the order they are pressed even when typed
+			so fast & computer couldn't render the letters, then the letters are added to buffer memory
+			and displayed in sequence with the help of Queue FIFO).
+		2. Printer Queue. (Print jobs should be completed in order).
+		3. Used in LinkedList, PriorityQueue, Breadth-first search.
+	
+  PriorityQueue:
+		   -> It's a FIFO Data Structure that serves elements with the highest priorities first before
+		   	  elements with lower priority.
+		   -> But PriorityQueue doesn't store elements in the order of insertion.
+		   -> PriorityQueue is designed to maintain the smallest element at the front, 
+		   	  but it does not ensure that all elements are sorted when you print it.
+		   -> To retrieve the elements in ascending order, you can use a loop to remove elements from 
+			  the queue one by one.
+			  
+			  
+  Dynamic Array/ArrayList:  [Java-ArrayList, C++-Vector, JS-Array, Python-List]
+		-> Static Array has a fixed capacity. (Not resizable)
+		-> Dynamic Array increases it's capacity by 1.5x, once it becomes fully occupied.
+		-> It's default capacity is 10 indexes.
+		
+		
+	 Advantages:
+	 	1. Random access of elements 0(1). Bcz the elements are in line one after other, we can get
+	 	   any element by it's index no.
+	 	2. Good locality of reference and data cache utilization.
+	 	3. Easy to insert/delete at the end.
+	 	
+	 Disadvantages:
+	 	1. Wastes more memory. It resizes to more capacity, where some indexes are not required.
+	 	2. Shifting elements is time consuming 0(n) linear. The closer to 0 index if we want to insert or
+	 	   delete we have to shift all the next elements to the right for insertion & to left for deletion.
+	 	3. Expanding/Shrinking the array is time consuming 0(n).
+	 	

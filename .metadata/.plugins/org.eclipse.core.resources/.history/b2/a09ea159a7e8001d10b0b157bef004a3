@@ -1,0 +1,7 @@
+package Collections_concept_Rec_Sr_2;
+
+public class ArrLst {//All of this Collection concepts r present in Java.Util package.
+	public static void main(String[] args) {
+		ArrayList<E>
+	}
+}

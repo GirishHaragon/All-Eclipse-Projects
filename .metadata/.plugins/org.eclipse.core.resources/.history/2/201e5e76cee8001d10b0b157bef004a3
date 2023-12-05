@@ -1,0 +1,9 @@
+package Collections_concept_Rec_Sr_2;
+
+import java.util.ArrayList;
+
+public class ArraLst {//We avoid storing Heterogeneous values in AL. If we want only integer values to be stored in AL then we write,,
+	public static void main(String[] args) {
+		ArrayList<Integer> x = new ArrayList<Integer>();
+	}
+}

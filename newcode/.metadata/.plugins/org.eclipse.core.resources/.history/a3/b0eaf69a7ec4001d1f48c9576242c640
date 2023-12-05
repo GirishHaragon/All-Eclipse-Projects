@@ -1,0 +1,46 @@
+package com.cruddemo.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+//For every table created in DB, we use one separate Entity Class.
+
+@Entity //Entity class is a Special class, these classes are mapped to the table of DB. Moment we write @Entity Spring Boot will automatically based on the name will search for the table in the DB & connect with that, Thats why we should give the same table name as in DB. & Spring boot automatically does the work of mapping.
+//It'll automatically do it, that's y we have given the name same, u apply this annotation and it will make this an entity class which means this class is mapped to the DB table, but how is this getting mapped, bcs the table name and the class name r same.
+public class Student {//Now we need to have the variables matching to the DB table..  
+	@Id //Id here tells that int id is a primary key or if we apply @Id over String name then the name becomes a primary key.
+	@GeneratedValue(strategy = GenerationType.IDENTITY)//Second thing is ID should be auto incrementing, hence to AutoIncrement the value we write @Gen Ctrl+Space select Generated Value then put Bracket again Ctrl+Space & select Strategy again press Ctrl+Space & select Identity:GenerationType... so this will automatically generate ids. 
+	private int id;
+	private String name;
+	private String course;
+	private int fee;
+	//& Now this is where we are achieving Encapsulation here. This is where in our project encapsulation is used. Now select Getters & Setters and click on generate.
+	//In interviews they ask where have u used Encapsulation in your project? => We have used encapsulation in a project while creating Entity Classes.
+	//Now as per our table in DB ID is the primary key so that we are writing @id above String ID.
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCourse() {
+		return course;
+	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	public int getFee() {
+		return fee;
+	}
+	public void setFee(int fee) {
+		this.fee = fee;
+	}
+}

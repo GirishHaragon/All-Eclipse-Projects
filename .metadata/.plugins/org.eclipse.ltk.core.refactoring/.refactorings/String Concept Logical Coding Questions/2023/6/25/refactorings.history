@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;Logical_Coding_Questions/src/CodingForShapes&apos;&#x0D;&#x0A;- Original project: &apos;String Concept Logical Coding Questions&apos;&#x0D;&#x0A;- Destination element: &apos;Logical_Coding_Questions/src/CodingForShapes&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     A.Square_with_Asterisks_by_ChatGPT.java&#x0D;&#x0A;     A.Square_with_Asterisks.java&#x0D;&#x0A;     A.Right_Angled_Triangle.java" description="Copy compilation units" destination="=Logical_Coding_Questions/src&lt;CodingForShapes" element1="/src&lt;A{Square_with_Asterisks_by_ChatGPT.java" element2="/src&lt;A{Square_with_Asterisks.java" element3="/src&lt;A{Right_Angled_Triangle.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1687570352606" units="3" version="1.0"/>
+</session>

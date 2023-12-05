@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;p2&apos; to &apos;Converting_data_Dto_to_Entity_&amp;_E_to_D/src&apos;&#x0D;&#x0A;- Original project: &apos;app_java-8_Features_StreamAPI&apos;&#x0D;&#x0A;- Destination element: &apos;Converting_data_Dto_to_Entity_&amp;_E_to_D/src&apos;&#x0D;&#x0A;- Original element: &apos;app_java-8_Features_StreamAPI/src/p2&apos;" description="Copy package" destination="=Converting_data_Dto_to_Entity_&amp;_E_to_D/src" element1="/src&lt;p2" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1684823578135" version="1.0"/>
+</session>

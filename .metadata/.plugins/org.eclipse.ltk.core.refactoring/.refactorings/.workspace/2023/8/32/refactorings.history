@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;demo&apos; to &apos;TCS_Interview_Que_StreamAPI&apos;" description="Rename resource &apos;demo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/demo" name="TCS_Interview_Que_StreamAPI" stamp="1691651974578" updateReferences="true"/>
+</session>

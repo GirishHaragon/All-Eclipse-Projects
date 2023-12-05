@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+            
+    
+    <wb-module deploy-name="Simply Coding- Youtube Coding Interview Ques">
+                        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                        
+        
+        <property name="context-root" value="Simply_Coding-_Java_String_Interview_Ques"/>
+                        
+        
+        <property name="java-output-path" value="/Simply Coding- Youtube Coding Interview Ques/build/classes"/>
+                    
+    
+    </wb-module>
+        
+
+</project-modules>

@@ -1,0 +1,16 @@
+package Collections_concept_Rec_Sr_2;
+
+import java.util.ArrayList;
+
+public class ArrLst {//All of this Collection concepts r present in Java.Util package.
+	public static void main(String[] args) {
+		ArrayList x = new ArrayList();//The field <> is called Generics. //We r creating an object of arrayList. So we should understand that by this a DataStructure gets created with a Initial size of 10indexes. After storing 10 elements in it, the size of the array increase to 15 automatically/dynamically that is 1.5x of initial size. And all the values stored based on the index no.
+		x.add(10);//To store the values as objects inside array we have built-in method add().
+		x.add(20);
+		x.add(new Integer(10));//The values are getting wrapped into Integer Wrapper class & getting stored into array indexes as Objects(Integer). This is called as Boxing.
+		x.add(30);//Here also it is happening to be Boxing.
+		//That's why ArrayList is a Collection. And Collection is a group of objects.
+		//That means, whatever values we r storing r not just primitive data, but actually converting those values into Objects & putting inside index of array.
+		//Now we can see a lot of warnings because of not using Generics in our ArrayList.
+	}
+}

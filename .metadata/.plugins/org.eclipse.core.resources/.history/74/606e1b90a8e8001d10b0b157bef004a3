@@ -1,0 +1,10 @@
+package Collections_concept_Rec_Sr_2;
+
+import java.util.ArrayList;
+
+public class ArrLst {//All of this Collection concepts r present in Java.Util package.
+	public static void main(String[] args) {
+		ArrayList x = new ArrayList();//The field <> is called Generics. //We r creating an object of arrayList. So we should understand that by this a DataStructure gets created with a Initial size of 10indexes. After storing 10 elements in it, the size of the array increase to 15 automatically/dynamically that is 1.5x of initial size. And all the values stored based on the index no.
+		x.add(10);//To store the values as objects inside array we have built-in method add().
+	}
+}

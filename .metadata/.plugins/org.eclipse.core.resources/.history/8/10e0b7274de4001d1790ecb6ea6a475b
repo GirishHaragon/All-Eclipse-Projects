@@ -1,0 +1,11 @@
+package JDBC_example;
+
+public class A {
+	public static void main(String[] args) {
+		try {//JDBC program always throws CompileTimeException, so writing try/catch block becomes mandatory.
+			
+		} catch (Exception e) {
+			
+		}
+	}
+}

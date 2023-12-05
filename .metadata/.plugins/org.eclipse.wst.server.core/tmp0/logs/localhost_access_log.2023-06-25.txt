@@ -1,0 +1,6 @@
+127.0.0.1 - - [25/Jun/2023:21:06:40 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:21:06:42 +0530] "GET /regapp_using_MVC_Arch/WEB-INF/classes/com/regapp/controller/Foo.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:21:06:43 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:21:07:28 +0530] "GET /regapp_using_MVC_Arch/WEB-INF/classes/com/regapp/controller/Foo.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:21:07:29 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [25/Jun/2023:21:07:59 +0530] "GET /favicon.ico HTTP/1.1" 404 762

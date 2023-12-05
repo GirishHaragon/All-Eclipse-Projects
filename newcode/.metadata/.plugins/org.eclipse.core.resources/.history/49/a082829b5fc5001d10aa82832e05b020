@@ -1,0 +1,42 @@
+package com.cruddemo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.cruddemo.entities.Student;
+import com.cruddemo.repository.StudentRepository;
+
+@SpringBootTest
+class CruddemoApplicationTests {
+
+	@Autowired
+	private StudentRepository studentRepo;
+	
+	@Test
+	void saveStudent() {//This saveStudent is working even if we have different name of Table in DB. For eg- Student1 table name in DB and this can be saveStudent or saveStudent1
+		Student s = new Student();//creating an Entity object.
+		s.setName("Mike");
+		s.setCourse("Java Development Course");
+		s.setFee(20000);
+		//Now what we have here is We have an Entity object with Data.
+		//The ORM comes to picture here. ORM-take the object contet and move it to table
+		//Now this repo layer has a method.
+		studentRepo.save(s);
+		//Entity Object Content is moved to DB Table, but who is moving it is Repository layer & what is repository layer giving us?=>Save method. Repository is an Interface
+		//Interface object is not created, the object created is SimpleJpaRepository (u can see it in the console. Here ClassUpcasting is happening here automatically.
+		//Now if we run as Junit then we can see the Contents are pushed inside the DB table.
+		//Now All we need to do is remember the steps as beginners,
+		//1st we created a SpringBoot Project, While creating it what dependencies we gave => MySQL Driver & SpringDataJPA why bcs it gives us hibernate jars/libraries.
+		//2nd we created a Database Schema with a table name student.
+		//3rd we Developed Entity Class.
+		//4th we Configured application.properties file, why bcs this is where we give DB so that SpBoot will automatically read this file & connect to DB
+		//All the above 4 Steps are to do with Hibernate
+		//5th Create Repository Layer that we create is to do with Spring Boot, Why r we creating, bcs it'll help us to do CRUD operation on entity object. Like we applied save method. who's giving Save method?=>Repo Layer
+	}
+	
+	@Test
+	void deleteOneStudent() {//Now we r about to delete a record based on Student ID
+		studentRepo.deleteById(1);//To perform single method run on Junit we can select the method name-deleteonestudent and right click and run as Junit. 
+	}
+}

@@ -1,0 +1,10 @@
+package com.cruddemo.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.cruddemo.entities.Student;
+
+public interface StudentRepository extends CrudRepository<Student, Integer> {
+	//This is the Repo layer, Whatever we write here will be CRUD operation.
+	//We have created this as interface, which extends parent class CruddemoApplicationTests.java located in src/test/java > com.cruddemo > CruddemoApplicationTests.java
+}

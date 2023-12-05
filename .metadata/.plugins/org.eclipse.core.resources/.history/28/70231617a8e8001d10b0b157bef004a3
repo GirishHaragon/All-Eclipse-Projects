@@ -1,0 +1,9 @@
+package Collections_concept_Rec_Sr_2;
+
+import java.util.ArrayList;
+
+public class ArrLst {//All of this Collection concepts r present in Java.Util package.
+	public static void main(String[] args) {
+		ArrayList x = new ArrayList();//The field <> is called Generics. //We r creating an object of arraylist.
+	}
+}

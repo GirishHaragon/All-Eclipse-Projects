@@ -1,0 +1,20 @@
+package com.cruddemo1;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.cruddemo1.repository.StudentRepository;
+
+@SpringBootTest
+class Cruddemo1ApplicationTests {
+
+	@Autowired
+	private StudentRepository student1Repo;
+	
+	@Test
+	void saveStudent1() {
+		System.out.println(student1Repo);
+	}
+
+}

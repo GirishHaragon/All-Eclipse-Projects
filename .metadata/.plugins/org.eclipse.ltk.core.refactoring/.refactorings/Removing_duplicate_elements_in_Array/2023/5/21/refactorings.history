@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Removing_duplicate_elements_in_Array&apos;&#x0D;&#x0A;- Original project: &apos;Removing_duplicate_elements_in_Array&apos;&#x0D;&#x0A;- Original element: &apos;app_Java_8.B.java&apos;" description="Delete element" element1="/src&lt;app_Java_8{B.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1684755884473" subPackages="false" version="1.0"/>
+</session>

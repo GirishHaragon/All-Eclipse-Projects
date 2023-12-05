@@ -1,0 +1,15 @@
+package demo;
+
+public class A {
+	public static void main(String[] args) {
+		
+		String s1 = "Hello 123 Sir 22 Good 33 Morning";
+		
+		s1.split(" ");
+//		numbers = re.findall(r'/d+', String);
+//	}
+//	
+//	public static List<String> extract_nums(String input){
+//		List<String> nums
+//	}
+ }

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Java_String_7_vids.Character_CLass&apos; to &apos;Character_CLass1&apos;&#x0D;&#x0A;- Original project: &apos;Simply Coding- Youtube Coding Interview Ques&apos;&#x0D;&#x0A;- Original element: &apos;Java_String_7_vids.Character_CLass&apos;&#x0D;&#x0A;- Renamed element: &apos;Java_String_7_vids.Character_CLass1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Character_CLass&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;Java_String_7_vids{Character_CLass.java[Character_CLass" matchStrategy="1" name="Character_CLass1" qualified="false" references="true" similarDeclarations="false" stamp="1691653500819" textual="false" version="1.0"/>
+</session>

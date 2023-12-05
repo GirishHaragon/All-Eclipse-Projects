@@ -1,0 +1,28 @@
+package com.cruddemo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.cruddemo.entities.Student;
+import com.cruddemo.repository.StudentRepository;
+
+@SpringBootTest
+class CruddemoApplicationTests {
+
+	@Autowired
+	private StudentRepository studentRepo;
+	
+	@Test
+	void saveStudent() {
+		Student s = new Student();
+		s.setName("Mike");
+		s.setCourse("Java Development Course");
+		s.setFee(20000);
+		//Now what we have here is We have an Entity object with Data.
+		//The ORM comes to picture here. ORM-take the object contet and move it to table
+		//Now this repo layer has a method.
+		studentRepo.save(s);
+	}
+
+}
